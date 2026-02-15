@@ -704,3 +704,202 @@ main.services > a img:hover{
    RESPONSIVE
 ========================= */
 
+@media (max-width: 680px){
+
+  /* Evita “fondo fijo” en mobile (mejor performance) */
+  body{
+    background-attachment: scroll;
+  }
+
+  /* NAV: apilado simple */
+  .nav{
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 18px 18px 16px;
+  }
+
+  .logo{
+    justify-self: center;
+  }
+  .logo img{
+    height: 70px;
+  }
+
+  .nav-links{
+    justify-self: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .nav-links a{
+    font-size: 11px;
+    letter-spacing: .16em;
+  }
+
+  /* Tipografías globales un toque más chicas */
+  p{
+    font-size: 15px;
+    line-height: 1.85;
+    letter-spacing: 0.6px;
+  }
+
+  /* HERO: si todavía lo usas en home */
+  .hero{
+    min-height: 520px;
+  }
+  .hero-image{
+    width: 260px;
+  }
+
+  /* Polaroids “decor” del home: escondelos en mobile para que no rompa layout */
+  .polaroid,
+  .p1, .p2, .p3, .p4{
+    display: none;
+  }
+
+  /* ABOUT: apilar */
+  .about-page{
+    padding: 46px 18px;
+    margin: 0;
+  }
+  .about-intro,
+  .about-bullets{
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+    column-gap: 0;
+    margin-bottom: 40px;
+  }
+  .about-intro-image,
+  .about-bullets-image{
+    width: min(320px, 90vw);
+    justify-self: center;
+  }
+
+  .about-intro-button{
+    max-width: none;
+  }
+  .about-intro-button img{
+    margin: 10px auto 0;
+  }
+
+  /* SERVICES */
+  main.services{
+    padding: 46px 18px 70px;
+  }
+
+  main.services > p{
+    max-width: 100%;
+    margin-bottom: 26px;
+  }
+
+  main.services > img{
+    width: min(92vw, 520px);
+    margin: 26px auto 60px;
+  }
+
+  /* FAQ: quitar imágenes decorativas para que no se salgan */
+  .faqs{
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+  .faqs > img:first-of-type,
+  .faqs > img:last-of-type{
+    display: none;
+  }
+  .faqs > h2{
+    margin-bottom: 30px;
+  }
+
+  /* PACKAGES: 1 columna */
+  .packages{
+    padding: 46px 18px;
+  }
+  .packages-grid{
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 28px;
+  }
+  .package-top{
+    height: 260px;
+  }
+
+  /* DISCLAIMERS */
+  .services #disclaimer1,
+  .services #disclaimer2{
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    margin-bottom: 28px;
+  }
+
+  /* BOOKNOW botón */
+  #booknow img{
+    width: 170px;
+  }
+
+  /* CONTACT */
+  .contact{
+    padding: 46px 18px;
+    max-width: 100%;
+  }
+
+  #titlecontact,
+  #titlecontactform{
+    margin-bottom: 22px;
+  }
+
+  .contact-top{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .contact-photo img{
+    width: min(320px, 90vw);
+    margin: 0 auto;
+  }
+
+  .contact-facts ul{
+    padding-left: 18px;
+  }
+
+  .contact-collage{
+    max-width: min(360px, 92vw);
+    margin: 46px auto 0;
+  }
+
+  #descriptioncontactform{
+    line-height: 28px;
+  }
+
+  /* FORM: padding más compacto */
+  .contact-form-wrap{
+    padding: 26px 14px 60px;
+  }
+
+  .contact-form{
+    width: min(520px, 94vw);
+    padding: 22px 18px;
+  }
+
+  .field{
+    margin-bottom: 16px;
+  }
+
+  .field label{
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .submit-btn{
+    border-radius: 10px;
+  }
+
+  /* FOOTER */
+  .footer{
+    height: auto;
+    padding: 40px 0 30px;
+    background-size: 140% auto; /* para que no se corte raro */
+  }
+}
+
+
+
