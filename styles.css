@@ -792,6 +792,20 @@ h2{
     display: none; /* ocultar menú desktop */
   }
 
+  .nav-links.is-open{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  top: 80px;            /* altura del header mobile */
+  left: 0;
+  right: 0;
+  padding: 18px;
+  background: #FBFAF5;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  z-index: 999;
+}
+
   /* centro del hero: usamos grid para empujar contenido al medio */
   .hero-center{
     position: relative;
