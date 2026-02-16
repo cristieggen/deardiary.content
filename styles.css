@@ -830,24 +830,17 @@ h2{
   }
 
   /* Oculta las otras dos */
-  .p1,
+  .p1, .p2,
   .p4{
     display: none;
-  }
-
-  /* Arriba del logo */
-  .p2{
-    left: 50%;
-    transform: translateX(-50%) rotate(-6deg);
-    width: 210px;
   }
 
   /* Abajo del logo */
   .p3{
     left: 50%;
-    bottom: 5px;
+    margin-bottom: 70px;
     transform: translateX(-50%) rotate(6deg);
-    width: 210px;
+    width: 250px;
   }
 
   /* ---------- opcional: quita espiral lateral en mobile si estorba ---------- */
