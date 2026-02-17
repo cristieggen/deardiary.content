@@ -448,7 +448,7 @@ main.services > a img:hover{
 
 /* imagen “nombre del paquete” tipo label */
 .package-name{
-  max-width: 300px;
+  max-width: 225px;
   display: block;
   margin: 0 auto 18px auto;
   margin-top: 25px;
