@@ -1160,4 +1160,136 @@ h2{
     font-size: 13px;
   }
 
-} 
+  }
+
+/* =========================
+   TABLET (iPad Pro)
+========================= */
+@media (max-width: 1024px) and (min-width: 431px){
+
+  /* ---------- NAV ---------- */
+  .nav{
+    padding: 0 40px;
+    height: 100px;
+  }
+
+  .logo img{
+    height: 70px;
+  }
+
+  .nav-links{
+    gap: 50px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero-image{
+    width: 260px;
+  }
+
+  /* Polaroids más centradas y menos extremas */
+  .polaroid{
+    width: 180px;
+  }
+
+  .polaroid img{
+    height: auto;
+    width: 250px;
+  }
+
+  .p1 {
+    top: 100px;
+    }
+
+  .p2 {
+    top: 100px;
+    }
+
+  .p3 {
+    left: 8%;
+    bottom: 50px;
+    }
+
+  .p4 {
+    bottom: 50px;
+    }
+
+  /* ---------- ABOUT ---------- */
+  .about-page{
+    padding: 60px 60px;
+  }
+
+  .about-intro{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  .about-intro-image{
+    width: 280px;
+  }
+
+  .about-bullets{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  .about-bullets-image{
+    width: 260px;
+  }
+
+  /* ---------- SERVICES ---------- */
+
+  .faqs > h3 {
+    line-height: 1.5;
+  }
+
+  main.services{
+    padding: 70px 60px 100px;
+  }
+
+  main.services > p{
+    max-width: 600px;
+  }
+
+  .faqs{
+    max-width: 600px;
+  }
+
+  /* Packages → 2 columnas en vez de 3 */
+  .packages-grid{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .package{
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* ---------- CONTACT ---------- */
+
+  
+#descriptioncontactform {
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+
+  .contact{
+    padding: 60px 60px;
+  }
+
+  .contact-top{
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+  }
+
+  .contact-collage{
+    max-width: 380px;
+  }
+
+  .contact-form{
+    width: min(500px, 90%);
+  }
+
+}
+
+
